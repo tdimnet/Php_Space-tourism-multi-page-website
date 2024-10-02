@@ -3,29 +3,23 @@
 $request = $_SERVER['REQUEST_URI'];
 $viewDir = '/views/';
 
-
-var_dump($request);
-var_dump(__DIR__);
-var_dump($viewDir);
-
-
 switch ($request) {
     case '':
     case '/':
         require __DIR__ . $viewDir . 'home.php';
         break;
 
-    // case '/crew':
-    //     require __DIR__ . $viewDir . 'crew.php';
-    //     break;
+    case '/crew':
+        require __DIR__ . $viewDir . 'crew.php';
+        break;
 
-    // case '/destination':
-    //     require __DIR__ . $viewDir . 'destination.php';
-    //     break;
+    case '/destination':
+        require __DIR__ . $viewDir . 'destination.php';
+        break;
 
-    // case '/technology':
-    //     require __DIR__ . $viewDir . 'technology.php';
-    //     break;
+    case '/technology':
+        require __DIR__ . $viewDir . 'technology.php';
+        break;
 
     default:
         http_response_code(404);
