@@ -1,6 +1,8 @@
 RewriteEngine On
+
+RewriteBase /
+
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)＄ index.php
-RewriteRule ^crew$ index.php
-RewriteRule ^destination$ index.php
-RewriteRule ^technology$ index.php
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php [QSA]

@@ -3,6 +3,16 @@
 $request = $_SERVER['REQUEST_URI'];
 $viewDir = '/views/';
 
+var_dump("=======");
+var_dump($request);
+var_dump("=======");
+var_dump("=======");
+var_dump($viewDir);
+var_dump("=======");
+var_dump("=======");
+var_dump(__DIR__);
+var_dump("=======");
+
 switch ($request) {
     case '':
     case '/':
