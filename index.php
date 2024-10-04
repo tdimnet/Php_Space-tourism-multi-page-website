@@ -2,20 +2,19 @@
 
 require_once("./vendor/autoload.php");
 
-$loader = new \Twig\Loader\ArrayLoader([
-    'index' => 'Hello {{ name }}!',
-]);
-
-$twig = new \Twig\Environment($loader);
-
 $request = $_SERVER['REQUEST_URI'];
 $viewDir = '/views/';
+
+
+$loader = new \Twig\Loader\FilesystemLoader('./views');
+$twig = new \Twig\Environment($loader);
+
+
 
 switch ($request) {
     case '':
     case '/':
-        // echo("Hello, World!");
-        echo $twig->render('index', ['name' => 'Thomas']);
+        echo $twig->render('home.twig');
         break;
 
 
