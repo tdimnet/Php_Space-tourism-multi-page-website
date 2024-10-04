@@ -1,3 +1,4 @@
-body {
-    background-color: tomato;
-}
+@import "./base/index";
+@import "./components/index";
+@import "./layouts/index";
+@import "./pages/index";

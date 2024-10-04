@@ -1,3 +1,8 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 body {
   background-color: tomato;
 }
