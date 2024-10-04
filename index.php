@@ -19,18 +19,18 @@ switch ($request) {
 
 
     case '/crew':
-        require __DIR__ . $viewDir . 'crew.php';
+        echo $twig->render('crew.twig');
         break;
 
     case '/destination':
-        require __DIR__ . $viewDir . 'destination.php';
+        echo $twig->render('destination.twig');
         break;
 
     case '/technology':
-        require __DIR__ . $viewDir . 'technology.php';
+        echo $twig->render('technology.twig');
         break;
 
     default:
         http_response_code(404);
-        require __DIR__ . $viewDir . '404.php';
+        echo $twig->render('404.twig');
 }
