@@ -1,13 +1,23 @@
 <?php
 
+require_once("./vendor/autoload.php");
+
+$loader = new \Twig\Loader\ArrayLoader([
+    'index' => 'Hello {{ name }}!',
+]);
+
+$twig = new \Twig\Environment($loader);
+
 $request = $_SERVER['REQUEST_URI'];
 $viewDir = '/views/';
 
 switch ($request) {
     case '':
     case '/':
-        require __DIR__ . $viewDir . 'home.php';
+        // echo("Hello, World!");
+        echo $twig->render('index', ['name' => 'Thomas']);
         break;
+
 
     case '/crew':
         require __DIR__ . $viewDir . 'crew.php';
