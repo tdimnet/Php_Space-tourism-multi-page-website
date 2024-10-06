@@ -6,5 +6,10 @@ composer.phar
 # composer.lock
 
 
-# NodeJS Stuff
+# NodeJS stuff
 node_modules
+
+# Mac and vim stuff
+.DS_STORE
+*.swp
+
