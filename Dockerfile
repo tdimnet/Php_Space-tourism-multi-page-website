@@ -35,4 +35,3 @@ RUN npm ci
 # Copying project files
 COPY index.php .
 
-
