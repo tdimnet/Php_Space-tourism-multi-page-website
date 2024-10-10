@@ -4,7 +4,7 @@
   "description": "A multipage website built with Php, Apache, Docker, and Sass.",
   "main": "index.js",
   "scripts": {
-    "sass:dev": "sass sass/main.scss public/css/main.css --watch",
+    "sass:dev": "sass --watch sass/main.scss public/css/main.css",
     "sass:build": "sass sass/main.scss public/css/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
