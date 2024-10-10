@@ -1,0 +1,47 @@
+@mixin heading-h1 {
+    font-family: $bellefair;
+    font-size: 150px;
+}
+
+@mixin heading-h2 {
+    font-family: $bellefair;
+    font-size: 100px;
+}
+
+@mixin heading-h3 {
+    font-family: $bellefair;
+    font-size: 56px;
+}
+
+@mixin heading-h4 {
+    font-family: $bellefair;
+    font-size: 32px;
+}
+
+@mixin heading-h5 {
+    font-family: $bellefair;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+}
+
+@mixin subheading-h1 {
+    font-family: $bellefair;
+    font-size: 28px;
+}
+
+@mixin subheading-h2 {
+    font-family: $barlow-condensed;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+}
+
+@mixin nav-text {
+    font-family: $barlow-condensed;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+}
+
+@mixin body-text {
+    font-family: $barlow-condensed;
+    font-size: 18px;
+}
