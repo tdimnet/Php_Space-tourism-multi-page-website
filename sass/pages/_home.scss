@@ -20,14 +20,17 @@
 
   &__first-paragraph {
     text-transform: uppercase;
+    @include heading-h5;
   }
 
   &__main-title {
     font-size: 80px;
+    @include heading-h1;
   }
 
   &__description {
     margin-bottom: 80px;
+    @include body-text;
   }
 
   &__cta {

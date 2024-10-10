@@ -395,12 +395,19 @@ h6 {
 }
 .home-page__first-paragraph {
   text-transform: uppercase;
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  letter-spacing: 4.72px;
 }
 .home-page__main-title {
   font-size: 80px;
+  font-family: "Bellefair", serif;
+  font-size: 150px;
 }
 .home-page__description {
   margin-bottom: 80px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
 }
 .home-page__cta {
   align-items: center;
