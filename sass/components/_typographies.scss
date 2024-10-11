@@ -1,6 +1,6 @@
 @mixin heading-h1 {
     font-family: $bellefair;
-    font-size: 150px;
+    font-size: clamp(5rem, 5rem + 4.861vw, 9.375rem);
 }
 
 @mixin heading-h2 {

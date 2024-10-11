@@ -402,7 +402,10 @@ h6 {
 .home-page__main-title {
   font-size: 80px;
   font-family: "Bellefair", serif;
-  font-size: 150px;
+  font-size: clamp(5rem, 5rem + 4.861vw, 9.375rem);
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
 }
 .home-page__description {
   margin-bottom: 80px;
