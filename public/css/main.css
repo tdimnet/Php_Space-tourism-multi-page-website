@@ -373,6 +373,15 @@ h6 {
   background-color: #FFFFFF;
   border-radius: 50%;
 }
+.navigation {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: tomato;
+  width: 75%;
+  height: 100vh;
+}
+
 .home-page::before {
   background-image: url("../../public/img/bg-home-mobile.jpg");
   background-repeat: no-repeat;
