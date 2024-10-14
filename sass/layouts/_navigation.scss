@@ -1,9 +1,36 @@
 .navigation {
     position: absolute;
+    z-index: 20;
     right: 0;
     top: 0;
     width: 75%;
     height: 100vh;
-    // background-color: rgba($color: #000, $alpha: .4);
-    filter: blur(80px);
+    backdrop-filter: blur(32px);
+
+    &__cross-icon {
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 64px;
+        padding-top: 24px;
+    }
+
+    &__nav-items {
+        list-style-type: none;
+        padding-left: 32px;
+    }
+
+    &__nav-item {
+        @include nav-text;
+        margin-bottom: 32px;
+
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    &__page-number {
+        font-weight: 700;
+    }
 }

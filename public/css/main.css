@@ -375,11 +375,37 @@ h6 {
 }
 .navigation {
   position: absolute;
+  z-index: 20;
   right: 0;
   top: 0;
   width: 75%;
   height: 100vh;
-  filter: blur(80px);
+  backdrop-filter: blur(32px);
+}
+.navigation__cross-icon {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 64px;
+  padding-top: 24px;
+}
+.navigation__nav-items {
+  list-style-type: none;
+  padding-left: 32px;
+}
+.navigation__nav-item {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  margin-bottom: 32px;
+}
+.navigation__nav-item a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.navigation__page-number {
+  font-weight: 700;
 }
 
 .home-page::before {
