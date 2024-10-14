@@ -1,6 +1,5 @@
 .navigation {
     position: absolute;
-    z-index: 20;
     right: 0;
     top: 0;
     width: 75%;
@@ -12,7 +11,8 @@
         display: flex;
         justify-content: flex-end;
         margin-bottom: 64px;
-        padding-top: 24px;
+        padding-top: 32px;
+        cursor: pointer;
     }
 
     &__nav-items {

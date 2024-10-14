@@ -15,5 +15,7 @@
     border-radius: 50%;
   }
 
-  &__burger {}
+  &__burger {
+    cursor: pointer;
+  }
 }

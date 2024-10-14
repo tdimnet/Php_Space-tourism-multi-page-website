@@ -359,6 +359,10 @@ h6 {
   isolation: isolate;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .main-nav {
   align-items: center;
   display: flex;
@@ -373,9 +377,12 @@ h6 {
   background-color: #FFFFFF;
   border-radius: 50%;
 }
+.main-nav__burger {
+  cursor: pointer;
+}
+
 .navigation {
   position: absolute;
-  z-index: 20;
   right: 0;
   top: 0;
   width: 75%;
@@ -387,7 +394,8 @@ h6 {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 64px;
-  padding-top: 24px;
+  padding-top: 32px;
+  cursor: pointer;
 }
 .navigation__nav-items {
   list-style-type: none;
