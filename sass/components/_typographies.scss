@@ -10,12 +10,14 @@
 
 @mixin heading-h3 {
     font-family: $bellefair;
-    font-size: 56px;
+    font-size: clamp(1.5rem, 0.917rem + 2.87vw, 3.5rem);
+    text-transform: uppercase;
 }
 
 @mixin heading-h4 {
     font-family: $bellefair;
-    font-size: 32px;
+    font-size: clamp(1rem, 0.709rem + 1.435vw, 2rem);
+    text-transform: uppercase;
 }
 
 @mixin heading-h5 {

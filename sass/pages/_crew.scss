@@ -61,4 +61,20 @@
             opacity: 1;
         }
     }
+
+    &__crew-role {
+        @include heading-h4;
+
+        opacity: .45;
+    }
+
+    &__member-name {
+        @include heading-h3;
+    }
+
+    &__member-description {
+        @include body-text;
+
+        color: $tropical-blue;
+    }
 }

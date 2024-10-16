@@ -533,6 +533,24 @@ h6 {
 .crew-page__bullet--active {
   opacity: 1;
 }
+.crew-page__crew-role {
+  font-family: "Bellefair", serif;
+  font-size: clamp(1rem, 0.709rem + 1.435vw, 2rem);
+  text-transform: uppercase;
+  opacity: 0.45;
+}
+.crew-page__member-name {
+  font-family: "Bellefair", serif;
+  font-size: clamp(1.5rem, 0.917rem + 2.87vw, 3.5rem);
+  text-transform: uppercase;
+}
+.crew-page__member-description {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(0.875rem, 0.802rem + 0.359vw, 1.125rem);
+  line-height: clamp(1.563rem, 1.435rem + 0.628vw, 2rem);
+  font-weight: 500;
+  color: #D0D6F9;
+}
 
 .destination-page::before {
   background-image: url("../../public/img/bg-destination-mobile.jpg");
@@ -594,7 +612,8 @@ h6 {
 }
 .destination-page__planet-name {
   font-family: "Bellefair", serif;
-  font-size: 56px;
+  font-size: clamp(1.5rem, 0.917rem + 2.87vw, 3.5rem);
+  text-transform: uppercase;
   margin-bottom: 0;
   text-transform: uppercase;
 }
