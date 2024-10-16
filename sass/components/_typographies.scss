@@ -27,12 +27,14 @@
 @mixin subheading-h1 {
     font-family: $bellefair;
     font-size: 28px;
+    text-transform: uppercase;
 }
 
 @mixin subheading-h2 {
     font-family: $barlow-condensed;
     font-size: 14px;
     letter-spacing: 2.35px;
+    text-transform: uppercase;
 }
 
 @mixin nav-text {

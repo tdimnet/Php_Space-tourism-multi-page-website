@@ -454,6 +454,7 @@ h6 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: clamp(0.875rem, 0.802rem + 0.359vw, 1.125rem);
   line-height: clamp(1.563rem, 1.435rem + 0.628vw, 2rem);
+  font-weight: 500;
   margin-bottom: 80px;
 }
 .home-page__cta {
@@ -478,7 +479,7 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
-  height: 100vh;
+  height: 110vh;
   left: 0;
   position: absolute;
   top: 0;
@@ -540,7 +541,46 @@ h6 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: clamp(0.875rem, 0.802rem + 0.359vw, 1.125rem);
   line-height: clamp(1.563rem, 1.435rem + 0.628vw, 2rem);
+  font-weight: 500;
   color: #D0D6F9;
+  margin-bottom: 32px;
+}
+.destination-page__travel-info {
+  border-top: 1px solid #383B4B;
+  padding-top: 32px;
+  list-style-type: none;
+  padding-left: 0;
+}
+.destination-page__avg-distance {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.35px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  color: #D0D6F9;
+}
+.destination-page__avg-distance-value {
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.destination-page__travel-time {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.35px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  color: #D0D6F9;
+}
+.destination-page__travel-time-value {
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=main.css.map */
