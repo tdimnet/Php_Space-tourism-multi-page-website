@@ -17,4 +17,24 @@
     margin-right: auto;
     text-align: center;
     width: 90%;
+
+    &__first-paragraph {
+        @include heading-h5;
+
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+
+    &__planet-image {
+        height: 10.625rem;
+        width: 10.625rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+    }
+
+    &__planets-list {
+        padding-left: 0;
+        list-style-type: none;
+    }
 }

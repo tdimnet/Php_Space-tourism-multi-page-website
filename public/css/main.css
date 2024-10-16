@@ -437,23 +437,23 @@ h6 {
   width: 90%;
 }
 .home-page__first-paragraph {
-  text-transform: uppercase;
   font-family: "Bellefair", serif;
-  font-size: 28px;
-  letter-spacing: 4.72px;
+  font-size: clamp(1rem, 0.781rem + 1.076vw, 1.75rem);
+  letter-spacing: clamp(0.156rem, 0.116rem + 0.199vw, 0.295rem);
+  text-transform: uppercase;
 }
 .home-page__main-title {
-  font-size: 80px;
   font-family: "Bellefair", serif;
   font-size: clamp(5rem, 5rem + 4.861vw, 9.375rem);
+  font-size: 80px;
   margin-top: 0;
   margin-bottom: 0;
   text-transform: uppercase;
 }
 .home-page__description {
-  margin-bottom: 80px;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 18px;
+  margin-bottom: 80px;
 }
 .home-page__cta {
   align-items: center;
@@ -491,6 +491,24 @@ h6 {
   margin-right: auto;
   text-align: center;
   width: 90%;
+}
+.destination-page__first-paragraph {
+  font-family: "Bellefair", serif;
+  font-size: clamp(1rem, 0.781rem + 1.076vw, 1.75rem);
+  letter-spacing: clamp(0.156rem, 0.116rem + 0.199vw, 0.295rem);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.destination-page__planet-image {
+  height: 10.625rem;
+  width: 10.625rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+.destination-page__planets-list {
+  padding-left: 0;
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=main.css.map */

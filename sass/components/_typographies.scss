@@ -20,8 +20,8 @@
 
 @mixin heading-h5 {
     font-family: $bellefair;
-    font-size: 28px;
-    letter-spacing: 4.72px;
+    font-size: clamp(1rem, 0.781rem + 1.076vw, 1.75rem);
+    letter-spacing: clamp(0.156rem, 0.116rem + 0.199vw, 0.295rem);
 }
 
 @mixin subheading-h1 {

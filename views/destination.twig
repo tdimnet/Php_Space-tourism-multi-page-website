@@ -1,19 +1,37 @@
 {% include './includes/header.twig' %}
 
 <main class="destination-page">
-    <p>
+    <p class="destination-page__first-paragraph">
         <span>01<span>
         Pick your destination
     </p>
-    <img src="../../public/img/moon.webp" alt="" />
-    <ul>
+
+    <img class="destination-page__planet-image" src="../../public/img/moon.webp" alt="" />
+
+    <ul class="destination-page__planets-list">
         <li>Moon</li>
         <li>Mars</li>
         <li>Europa</li>
         <li>Titan</li>
     </ul>
 
-    <h1>Moon</h1>
+    <h1 class="destination-page__planet-name">
+        Moon
+    </h1>
+    <p class="destination-page__planet-description">
+        See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+    </p>
+
+    <ul>
+        <li>
+            <span>AVG. DISTANCE</span>
+            <span>384,400 km</span>
+        </li>
+        <li>
+            <span>Est. travel time</span>
+            <span>3 days</span>
+        </li>
+    </ul>
 </main>
 
 {% include './includes/footer.twig' %}
