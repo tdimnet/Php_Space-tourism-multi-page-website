@@ -3,7 +3,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     content: "";
-    height: 110vh;
+
+    // It's not perfect yet. For smaller resolutions, it doesn't fully work.
+    height: 120vh;
+    
     left: 0;
     position: absolute;
     top: 0;

@@ -70,6 +70,8 @@
 
     &__member-name {
         @include heading-h3;
+
+        font-weight: 300;
     }
 
     &__member-description {
