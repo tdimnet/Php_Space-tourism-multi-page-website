@@ -47,6 +47,7 @@
         cursor: pointer;
         color: $tropical-blue;
         transition: .4s;
+        border-bottom: 3px solid transparent;
 
         &:hover {
             color: $white;

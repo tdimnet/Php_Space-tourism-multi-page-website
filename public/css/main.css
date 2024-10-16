@@ -523,6 +523,7 @@ h6 {
   cursor: pointer;
   color: #D0D6F9;
   transition: 0.4s;
+  border-bottom: 3px solid transparent;
 }
 .destination-page__planet:hover {
   color: #FFFFFF;
