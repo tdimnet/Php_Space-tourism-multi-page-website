@@ -44,5 +44,7 @@
 
 @mixin body-text {
     font-family: $barlow-condensed;
-    font-size: 18px;
+    font-size: clamp(0.875rem, 0.802rem + 0.359vw, 1.125rem);
+    line-height: clamp(1.563rem, 1.435rem + 0.628vw, 2rem);
+    font-weight: 500;
 }

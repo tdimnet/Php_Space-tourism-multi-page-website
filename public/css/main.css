@@ -452,7 +452,8 @@ h6 {
 }
 .home-page__description {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 18px;
+  font-size: clamp(0.875rem, 0.802rem + 0.359vw, 1.125rem);
+  line-height: clamp(1.563rem, 1.435rem + 0.628vw, 2rem);
   margin-bottom: 80px;
 }
 .home-page__cta {
@@ -509,6 +510,37 @@ h6 {
 .destination-page__planets-list {
   padding-left: 0;
   list-style-type: none;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.destination-page__planet {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  cursor: pointer;
+  color: #D0D6F9;
+  transition: 0.4s;
+}
+.destination-page__planet:hover {
+  color: #FFFFFF;
+}
+.destination-page__planet--active {
+  color: #FFFFFF;
+  border-bottom: 3px solid #FFFFFF;
+}
+.destination-page__planet-name {
+  font-family: "Bellefair", serif;
+  font-size: 56px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.destination-page__planet-description {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(0.875rem, 0.802rem + 0.359vw, 1.125rem);
+  line-height: clamp(1.563rem, 1.435rem + 0.628vw, 2rem);
+  color: #D0D6F9;
 }
 
 /*# sourceMappingURL=main.css.map */
