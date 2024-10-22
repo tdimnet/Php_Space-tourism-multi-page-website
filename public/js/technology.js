@@ -6,12 +6,18 @@ function onChangeTechnology($selectedTechnology) {
     })
     $selectedTechnology.classList.add('technology-page__technology-step--active')
 
-    console.log("====")
-    console.log($selectedTechnology)
-    console.log("====")
-    console.log("====")
-    console.log(TECHNOLOGIES_DATA)
-    console.log("====")
+    const selectedTechnologyData = TECHNOLOGIES_DATA[$selectedTechnology.getAttribute('data-id')]
+
+    const $technologyImg = document.querySelector('.technology-page__main-img')
+    const $technologyName = document.querySelector('.technology-page__technology-name')
+    const $technologyDescription = document.querySelector('.technology-page__technology-description')
+
+    // $technologyImg.style.backgroundImage = selectedTechnologyData.img
+
+    console.log($technologyImg)
+
+    $technologyName.textContent = selectedTechnologyData.name
+    $technologyDescription.textContent = selectedTechnologyData.description
 }
 
 $technologySteps.forEach($step => {
