@@ -1,17 +1,20 @@
-const $bulletsCrew = document.querySelectorAll('.crew-page__bullets-list')
+const $bulletsCrew = document.querySelectorAll(".crew-page__bullet");
 
-function onChangeCrewMember($bullet) {
-    console.log("======")
-    console.log($bullet)
-    console.log("======")
-    console.log("======")
-    console.log(CREW_DATA)
-    console.log("======")
+function onChangeCrewMember($selectedBullet) {
+  $bulletsCrew.forEach(($bullet) => {
+    $bullet.classList.remove("crew-page__bullet--active");
+  });
+  $selectedBullet.classList.add("crew-page__bullet--active");
+
+  const selectedCrewMemberData = CREW_DATA[$selectedBullet.getAttribute('data-id')]
+
+  console.log("===")
+  console.log(selectedCrewMemberData)
+  console.log("===")
 }
 
-
 $bulletsCrew.forEach(($bullet) => {
-    $bullet.addEventListener('click', () => {
-        onChangeCrewMember($bullet)
-    })
-})
+  $bullet.addEventListener("click", () => {
+    onChangeCrewMember($bullet);
+  });
+});
