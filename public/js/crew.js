@@ -8,9 +8,15 @@ function onChangeCrewMember($selectedBullet) {
 
   const selectedCrewMemberData = CREW_DATA[$selectedBullet.getAttribute('data-id')]
 
-  console.log("===")
-  console.log(selectedCrewMemberData)
-  console.log("===")
+  const $crewMemberImg = document.querySelector('.crew-page__crew-member')
+  const $crewMemberRole = document.querySelector('.crew-page__crew-role')
+  const $crewMemberName = document.querySelector('.crew-page__member-name')
+  const $crewMemberDescription = document.querySelector('.crew-page__member-description')
+
+  $crewMemberImg.src = selectedCrewMemberData.img
+  $crewMemberRole.textContent = selectedCrewMemberData.role
+  $crewMemberName.textContent = selectedCrewMemberData.name
+  $crewMemberDescription.textContent = selectedCrewMemberData.description
 }
 
 $bulletsCrew.forEach(($bullet) => {
