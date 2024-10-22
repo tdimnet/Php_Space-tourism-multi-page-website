@@ -684,5 +684,63 @@ h6 {
   text-align: center;
   width: 90%;
 }
+.technology-page__first-paragraph {
+  font-family: "Bellefair", serif;
+  font-size: clamp(1rem, 0.781rem + 1.076vw, 1.75rem);
+  letter-spacing: clamp(0.156rem, 0.116rem + 0.199vw, 0.295rem);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.technology-page__main-img {
+  background-image: url("../../public/img/launch-vehicle-landscape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -5%;
+  width: 110%;
+  height: 170px;
+  margin-bottom: 32px;
+}
+.technology-page__technology-steps {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+.technology-page__technology-step {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+.technology-page__technology-step--active {
+  background-color: #FFFFFF;
+  color: #0B0D17;
+}
+.technology-page__technology-heading {
+  font-family: "Bellefair", serif;
+  font-size: clamp(1rem, 0.709rem + 1.435vw, 2rem);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.technology-page__technology-name {
+  font-family: "Bellefair", serif;
+  font-size: clamp(1.5rem, 0.917rem + 2.87vw, 3.5rem);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.technology-page__technology-description {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(0.875rem, 0.802rem + 0.359vw, 1.125rem);
+  font-weight: 500;
+  line-height: clamp(1.563rem, 1.435rem + 0.628vw, 2rem);
+  color: #D0D6F9;
+}
 
 /*# sourceMappingURL=main.css.map */

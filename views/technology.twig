@@ -6,10 +6,12 @@
         Space launch 101
     </p>
 
-    <img class="technology-page__main-img" src="../../public/img/launch-vehicle-landscape.jpg" />
+    <div class="technology-page__main-img">
+    </div>
+    
 
     <ul class="technology-page__technology-steps">
-        <li class="technology-page__technology-step" data-id="1">1</li>
+        <li class="technology-page__technology-step technology-page__technology-step--active" data-id="1">1</li>
         <li class="technology-page__technology-step" data-id="2">2</li>
         <li class="technology-page__technology-step" data-id="3">3</li>
     </ul>
@@ -22,5 +24,7 @@
     </p>
 </main>
 
+<script src="../../public/js/technologiesData.js"></script>
+<script src="../../public/js/technology.js"></script>
 
 {% include './includes/footer.twig' %}
