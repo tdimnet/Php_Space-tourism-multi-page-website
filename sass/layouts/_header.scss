@@ -1,0 +1,60 @@
+.main-nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-bottom: 48px;
+
+  // For now, I keep this here before moving to general rules on the body
+  padding-top: 24px;
+
+  &__logo {
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+  &__burger {
+    cursor: pointer;
+  }
+}
+
+.navigation {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 75%;
+    height: 100vh;
+    backdrop-filter: blur(32px);
+
+    &__cross-icon {
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 64px;
+        padding-top: 32px;
+        cursor: pointer;
+    }
+
+    &__nav-items {
+        list-style-type: none;
+        padding-left: 32px;
+    }
+
+    &__nav-item {
+        @include nav-text;
+        margin-bottom: 32px;
+
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    &__page-number {
+        font-weight: 700;
+    }
+}
+
+

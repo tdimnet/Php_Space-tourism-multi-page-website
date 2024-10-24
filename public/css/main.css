@@ -436,6 +436,11 @@ h6 {
   text-align: center;
   width: 90%;
 }
+@media screen and (min-width: 48rem) {
+  .home-page {
+    max-width: 445px;
+  }
+}
 .home-page__first-paragraph {
   font-family: "Bellefair", serif;
   font-size: clamp(1rem, 0.781rem + 1.076vw, 1.75rem);
@@ -445,7 +450,6 @@ h6 {
 .home-page__main-title {
   font-family: "Bellefair", serif;
   font-size: clamp(5rem, 5rem + 4.861vw, 9.375rem);
-  font-size: 80px;
   margin-top: 0;
   margin-bottom: 0;
   text-transform: uppercase;
