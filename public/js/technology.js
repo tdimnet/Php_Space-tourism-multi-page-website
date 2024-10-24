@@ -12,7 +12,7 @@ function onChangeTechnology($selectedTechnology) {
     const $technologyName = document.querySelector('.technology-page__technology-name')
     const $technologyDescription = document.querySelector('.technology-page__technology-description')
 
-    // $technologyImg.style.backgroundImage = selectedTechnologyData.img
+    $technologyImg.style.backgroundImage = `url(${selectedTechnologyData.img})`
 
     console.log($technologyImg)
 

@@ -526,7 +526,6 @@ h6 {
   opacity: 0.2;
   transition: 0.4s;
   width: 10px;
-  z-index: -1;
 }
 .crew-page__bullet:hover {
   opacity: 0.4;
