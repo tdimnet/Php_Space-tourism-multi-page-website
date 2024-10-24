@@ -40,6 +40,10 @@
     @include body-text;
 
     margin-bottom: 80px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 156px;
+    }
   }
 
   &__cta {
@@ -57,6 +61,12 @@
     text-decoration: none;
     text-transform: uppercase;
     width: 150px;
+
+    @media screen and (min-width: $tablet) {
+      height: 240px;
+      width: 240px;
+      font-size: 32px;
+    }
   }
 }
 

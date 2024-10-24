@@ -373,6 +373,11 @@ h6 {
   margin-bottom: 48px;
   padding-top: 24px;
 }
+@media screen and (min-width: 48rem) {
+  .main-nav {
+    margin-bottom: 112px;
+  }
+}
 .main-nav__logo {
   background-color: #FFFFFF;
   border-radius: 50%;
@@ -380,10 +385,35 @@ h6 {
 .main-nav__burger {
   cursor: pointer;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   .main-nav__burger {
     display: none;
   }
+}
+
+.desktop-navigation {
+  display: none;
+}
+@media screen and (min-width: 48rem) {
+  .desktop-navigation {
+    display: block;
+  }
+}
+.desktop-navigation__nav-items {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  gap: 40px;
+}
+.desktop-navigation__nav-item {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+.desktop-navigation__nav-item a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .navigation {
@@ -466,6 +496,11 @@ h6 {
   line-height: clamp(1.563rem, 1.435rem + 0.628vw, 2rem);
   margin-bottom: 80px;
 }
+@media screen and (min-width: 48rem) {
+  .home-page__description {
+    margin-bottom: 156px;
+  }
+}
 .home-page__cta {
   align-items: center;
   background-color: #FFFFFF;
@@ -481,6 +516,13 @@ h6 {
   text-decoration: none;
   text-transform: uppercase;
   width: 150px;
+}
+@media screen and (min-width: 48rem) {
+  .home-page__cta {
+    height: 240px;
+    width: 240px;
+    font-size: 32px;
+  }
 }
 
 .crew-page::before {

@@ -10,7 +10,11 @@
   // For now, I keep this here before moving to general rules on the body
   padding-top: 24px;
 
-  &__logo {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 112px;
+  }
+
+    &__logo {
     background-color: $white;
     border-radius: 50%;
   }
@@ -18,8 +22,32 @@
   &__burger {
     cursor: pointer;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       display: none;
+    }
+  }
+}
+
+.desktop-navigation {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+
+  &__nav-items {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    gap: 40px;
+  }
+
+  &__nav-item {
+    @include nav-text;
+
+    a {
+      color: $white;
+      text-decoration: none;
     }
   }
 }
