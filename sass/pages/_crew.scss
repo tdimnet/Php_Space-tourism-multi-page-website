@@ -9,6 +9,11 @@
     top: 0;
     width: 100vw;
     z-index: -1;
+
+
+    @media screen and (min-width: $tablet) {
+      background-image: url("../../public/img/bg-crew-tablet.jpg");
+    }
 }
 
 .crew-page {
@@ -17,18 +22,32 @@
     margin-right: auto;
     text-align: center;
     width: 90%;
+    max-width: 445px;
 
     &__first-paragraph {
         @include heading-h5;
 
         text-transform: uppercase;
         margin-bottom: 32px;
+
+        @media screen and (min-width: $tablet) {
+          text-align: left;
+          margin-bottom: 60px;
+        }
     }
 
     &__crew-member {
         height: 222px;
         margin-left: auto;
         margin-right: auto;
+
+        @media screen and (min-width: $tablet) {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 450px;
+        }
     }
 
     &__bullets-list {
@@ -41,6 +60,14 @@
         margin-bottom: 32px;
         padding-left: 0;
         padding-top: 32px;
+
+        @media screen and (min-width: $tablet) {
+          border-top: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
     }
 
     &__bullet {
