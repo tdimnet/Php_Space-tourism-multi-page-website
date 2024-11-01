@@ -624,6 +624,7 @@ h6 {
 @media screen and (min-width: 48rem) {
   .destination-page::before {
     background-image: url("../../public/img/bg-destination-tablet.jpg");
+    height: 100vh;
   }
 }
 
@@ -633,6 +634,7 @@ h6 {
   margin-right: auto;
   text-align: center;
   width: 90%;
+  max-width: 445px;
 }
 .destination-page__first-paragraph {
   font-family: "Bellefair", serif;
@@ -658,6 +660,7 @@ h6 {
   .destination-page__planet-image {
     height: 300px;
     width: 300px;
+    margin-bottom: 56px;
   }
 }
 .destination-page__planets-list {
@@ -666,6 +669,12 @@ h6 {
   display: flex;
   gap: 24px;
   justify-content: center;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 48rem) {
+  .destination-page__planets-list {
+    margin-bottom: 32px;
+  }
 }
 .destination-page__planet {
   font-family: "Barlow Condensed", sans-serif;
@@ -688,6 +697,7 @@ h6 {
   font-family: "Bellefair", serif;
   font-size: clamp(1.5rem, 0.917rem + 2.87vw, 3.5rem);
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 0;
   text-transform: uppercase;
 }
