@@ -796,6 +796,11 @@ h6 {
   width: 100vw;
   z-index: -1;
 }
+@media screen and (min-width: 48rem) {
+  .technology-page::before {
+    background-image: url("../../public/img/bg-technology-tablet.jpg");
+  }
+}
 
 .technology-page {
   color: #FFFFFF;
@@ -803,6 +808,7 @@ h6 {
   margin-right: auto;
   text-align: center;
   width: 90%;
+  max-width: 445px;
 }
 .technology-page__first-paragraph {
   font-family: "Bellefair", serif;
@@ -815,10 +821,14 @@ h6 {
   background-image: url("../../public/img/launch-vehicle-landscape.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: -5%;
-  width: 110%;
   height: 170px;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 48rem) {
+  .technology-page__main-img {
+    height: 310px;
+    margin-bottom: 56px;
+  }
 }
 .technology-page__technology-steps {
   list-style-type: none;
@@ -827,6 +837,11 @@ h6 {
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
+}
+@media screen and (min-width: 48rem) {
+  .technology-page__technology-steps {
+    margin-bottom: 45px;
+  }
 }
 .technology-page__technology-step {
   height: 40px;
@@ -839,6 +854,12 @@ h6 {
   cursor: pointer;
   margin-bottom: 24px;
   transition: 0.4s;
+}
+@media screen and (min-width: 48rem) {
+  .technology-page__technology-step {
+    height: 60px;
+    width: 60px;
+  }
 }
 .technology-page__technology-step:hover {
   background-color: rgba(255, 255, 255, 0.2666666667);
