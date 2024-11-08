@@ -13,6 +13,10 @@
   @media screen and (min-width: $tablet) {
     background-image: url("../../public/img/bg-home-tablet.jpg");
   }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url("../../public/img/bg-home-desktop.jpg");
+  }
 }
 
 .home-page {
@@ -24,6 +28,20 @@
 
   @media screen and (min-width: $tablet) {
     max-width: 445px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 80%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__main-content {
+    @media screen and (min-width: $desktop) {
+      width: 50%;
+    }
   }
 
   &__first-paragraph {
@@ -55,7 +73,6 @@
     background-color: $white;
     border-radius: 100%;
     color: $vulcan;
-    display: block;
     display: flex;
     font-size: 20px;
     height: 150px;
@@ -70,6 +87,10 @@
       height: 240px;
       width: 240px;
       font-size: 32px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 0;
     }
   }
 }

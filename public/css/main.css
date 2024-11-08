@@ -468,6 +468,11 @@ h6 {
     background-image: url("../../public/img/bg-home-tablet.jpg");
   }
 }
+@media screen and (min-width: 64rem) {
+  .home-page::before {
+    background-image: url("../../public/img/bg-home-desktop.jpg");
+  }
+}
 
 .home-page {
   color: #FFFFFF;
@@ -479,6 +484,20 @@ h6 {
 @media screen and (min-width: 48rem) {
   .home-page {
     max-width: 445px;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .home-page {
+    width: 80%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .home-page__main-content {
+    width: 50%;
   }
 }
 .home-page__first-paragraph {
@@ -511,7 +530,6 @@ h6 {
   background-color: #FFFFFF;
   border-radius: 100%;
   color: #0B0D17;
-  display: block;
   display: flex;
   font-size: 20px;
   height: 150px;
@@ -527,6 +545,11 @@ h6 {
     height: 240px;
     width: 240px;
     font-size: 32px;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .home-page__cta {
+    margin-right: 0;
   }
 }
 
