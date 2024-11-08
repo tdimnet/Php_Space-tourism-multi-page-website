@@ -363,6 +363,10 @@ h6 {
   display: none !important;
 }
 
+body {
+  min-height: 100vh;
+}
+
 .main-nav {
   align-items: center;
   display: flex;
@@ -484,20 +488,23 @@ h6 {
 @media screen and (min-width: 48rem) {
   .home-page {
     max-width: 445px;
+    padding-bottom: 130px;
   }
 }
 @media screen and (min-width: 64rem) {
   .home-page {
+    max-width: unset;
     width: 80%;
+    height: 80vh;
     text-align: left;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
   }
 }
 @media screen and (min-width: 64rem) {
   .home-page__main-content {
-    width: 50%;
+    width: 470px;
   }
 }
 .home-page__first-paragraph {
@@ -550,6 +557,7 @@ h6 {
 @media screen and (min-width: 64rem) {
   .home-page__cta {
     margin-right: 0;
+    align-self: center;
   }
 }
 

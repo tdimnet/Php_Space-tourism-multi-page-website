@@ -28,19 +28,22 @@
 
   @media screen and (min-width: $tablet) {
     max-width: 445px;
+    padding-bottom: 130px;
   }
 
   @media screen and (min-width: $desktop) {
+    max-width: unset;
     width: 80%;
+    height: 80vh;
     text-align: left;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
   }
 
   &__main-content {
     @media screen and (min-width: $desktop) {
-      width: 50%;
+      width: 470px;
     }
   }
 
@@ -91,6 +94,7 @@
 
     @media screen and (min-width: $desktop) {
       margin-right: 0;
+      align-self: center;
     }
   }
 }
