@@ -589,6 +589,11 @@ body {
     background-image: url("../../public/img/bg-crew-tablet.jpg");
   }
 }
+@media screen and (min-width: 64rem) {
+  .crew-page::before {
+    background-image: url("../../public/img/bg-crew-desktop.jpg");
+  }
+}
 
 .crew-page {
   color: #FFFFFF;
@@ -597,6 +602,15 @@ body {
   text-align: center;
   width: 90%;
   max-width: 445px;
+}
+@media screen and (min-width: 64rem) {
+  .crew-page {
+    max-width: 1024px;
+    width: 50%;
+    text-align: left;
+    margin-left: unset;
+    margin-right: unset;
+  }
 }
 .crew-page__first-paragraph {
   font-family: "Bellefair", serif;
@@ -623,6 +637,14 @@ body {
     left: 50%;
     transform: translateX(-50%);
     height: 450px;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .crew-page__crew-member {
+    bottom: 0;
+    left: unset;
+    right: 0;
+    transform: unset;
   }
 }
 .crew-page__bullets-list {
@@ -699,6 +721,11 @@ body {
     height: 100vh;
   }
 }
+@media screen and (min-width: 48rem) {
+  .destination-page::before {
+    background-image: url("../../public/img/bg-destination-desktop.jpg");
+  }
+}
 
 .destination-page {
   color: #FFFFFF;
@@ -717,6 +744,7 @@ body {
     align-items: center;
     height: 80vh;
     justify-content: space-between;
+    text-align: left;
   }
 }
 @media screen and (min-width: 64rem) {
@@ -752,6 +780,13 @@ body {
   }
 }
 @media screen and (min-width: 64rem) {
+  .destination-page__planet-image {
+    max-width: 445px;
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (min-width: 64rem) {
   .destination-page__planets-data {
     width: 40%;
   }
@@ -767,6 +802,11 @@ body {
 @media screen and (min-width: 48rem) {
   .destination-page__planets-list {
     margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .destination-page__planets-list {
+    justify-content: start;
   }
 }
 .destination-page__planet {
@@ -813,6 +853,11 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .destination-page__travel-info {
+    justify-content: space-between;
   }
 }
 .destination-page__avg-distance {

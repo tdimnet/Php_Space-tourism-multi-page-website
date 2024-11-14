@@ -14,6 +14,11 @@
     @media screen and (min-width: $tablet) {
       background-image: url("../../public/img/bg-crew-tablet.jpg");
     }
+
+    
+    @media screen and (min-width: $desktop) {
+        background-image: url("../../public/img/bg-crew-desktop.jpg");
+      }
 }
 
 .crew-page {
@@ -23,6 +28,14 @@
     text-align: center;
     width: 90%;
     max-width: 445px;
+
+    @media screen and (min-width: $desktop) {
+        max-width: 1024px;
+        width: 50%;
+        text-align: left;
+        margin-left: unset;
+        margin-right: unset;
+    }
 
     &__first-paragraph {
         @include heading-h5;
@@ -48,6 +61,13 @@
           transform: translateX(-50%);
           height: 450px;
         }
+
+        @media screen and (min-width: $desktop) {
+            bottom: 0;
+            left: unset;
+            right: 0;
+            transform: unset;
+          }
     }
 
     &__bullets-list {
