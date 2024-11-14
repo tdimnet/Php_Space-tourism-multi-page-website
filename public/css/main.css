@@ -499,7 +499,7 @@ body {
 }
 @media screen and (min-width: 64rem) {
   .home-page {
-    max-width: unset;
+    max-width: 1440px;
     width: 80%;
     text-align: left;
     display: flex;
@@ -708,6 +708,22 @@ body {
   width: 90%;
   max-width: 445px;
 }
+@media screen and (min-width: 64rem) {
+  .destination-page {
+    max-width: 1440px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80vh;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .destination-page__destination-container {
+    width: 40%;
+  }
+}
 .destination-page__first-paragraph {
   font-family: "Bellefair", serif;
   font-size: clamp(1rem, 0.781rem + 1.076vw, 1.75rem);
@@ -733,6 +749,11 @@ body {
     height: 300px;
     width: 300px;
     margin-bottom: 56px;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .destination-page__planets-data {
+    width: 40%;
   }
 }
 .destination-page__planets-list {

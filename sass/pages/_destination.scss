@@ -28,6 +28,22 @@
     width: 90%;
     max-width: 445px;
 
+    @media screen and (min-width: $desktop) {
+        max-width: 1440px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 80vh;
+        justify-content: space-between;
+    }
+
+    &__destination-container {
+        @media screen and (min-width: $desktop) {
+            width: 40%;
+        }
+    }
+
     &__first-paragraph {
         @include heading-h5;
 
@@ -52,6 +68,12 @@
           height: 300px;
           width: 300px;
           margin-bottom: 56px;
+        }
+    }
+
+    &__planets-data {
+        @media screen and (min-width: $desktop) {
+            width: 40%;
         }
     }
 

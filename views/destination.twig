@@ -1,37 +1,41 @@
 {% include './includes/header.twig' %}
 
 <main class="destination-page">
-    <p class="destination-page__first-paragraph">
-        <span>01<span>
-        Pick your destination
-    </p>
+    <div class="destination-page__destination-container">
+        <p class="destination-page__first-paragraph">
+            <span>01<span>
+            Pick your destination
+        </p>
 
-    <img class="destination-page__planet-image" src="../../public/img/moon.webp" alt="" />
+        <img class="destination-page__planet-image" src="../../public/img/moon.webp" alt="" />
+    </div>
 
-    <ul class="destination-page__planets-list">
-        <li class="destination-page__planet destination-page__planet--active">Moon</li>
-        <li class="destination-page__planet">Mars</li>
-        <li class="destination-page__planet">Europa</li>
-        <li class="destination-page__planet">Titan</li>
-    </ul>
+    <div class="destination-page__planets-data">
+        <ul class="destination-page__planets-list">
+            <li class="destination-page__planet destination-page__planet--active">Moon</li>
+            <li class="destination-page__planet">Mars</li>
+            <li class="destination-page__planet">Europa</li>
+            <li class="destination-page__planet">Titan</li>
+        </ul>
 
-    <h1 class="destination-page__planet-name">
-        Moon
-    </h1>
-    <p class="destination-page__planet-description">
-        See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
-    </p>
+        <h1 class="destination-page__planet-name">
+            Moon
+        </h1>
+        <p class="destination-page__planet-description">
+            See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
 
-    <ul class="destination-page__travel-info">
-        <li class="destination-page__avg-distance">
-            Avg. distance
-            <span class="destination-page__avg-distance-value">384,400 km</span>
-        </li>
-        <li class="destination-page__travel-time">
-            Est. travel time
-            <span class="destination-page__travel-time-value">3 days</span>
-        </li>
-    </ul>
+        <ul class="destination-page__travel-info">
+            <li class="destination-page__avg-distance">
+                Avg. distance
+                <span class="destination-page__avg-distance-value">384,400 km</span>
+            </li>
+            <li class="destination-page__travel-time">
+                Est. travel time
+                <span class="destination-page__travel-time-value">3 days</span>
+            </li>
+        </ul>
+    </div>
 </main>
 
 <script src="../../public/js/planetsData.js"></script>
