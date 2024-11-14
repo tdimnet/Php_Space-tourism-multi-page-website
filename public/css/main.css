@@ -382,6 +382,11 @@ body {
     margin-bottom: 112px;
   }
 }
+@media screen and (min-width: 64rem) {
+  .main-nav {
+    margin-bottom: 0;
+  }
+}
 .main-nav__logo {
   background-color: #FFFFFF;
   border-radius: 50%;
@@ -475,6 +480,7 @@ body {
 @media screen and (min-width: 64rem) {
   .home-page::before {
     background-image: url("../../public/img/bg-home-desktop.jpg");
+    height: 100%;
   }
 }
 
@@ -495,11 +501,12 @@ body {
   .home-page {
     max-width: unset;
     width: 80%;
-    height: 80vh;
     text-align: left;
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: center;
+    padding-bottom: 0;
+    height: 80vh;
   }
 }
 @media screen and (min-width: 64rem) {
@@ -532,6 +539,11 @@ body {
     margin-bottom: 156px;
   }
 }
+@media screen and (min-width: 64rem) {
+  .home-page__description {
+    margin-bottom: 0px;
+  }
+}
 .home-page__cta {
   align-items: center;
   background-color: #FFFFFF;
@@ -557,7 +569,6 @@ body {
 @media screen and (min-width: 64rem) {
   .home-page__cta {
     margin-right: 0;
-    align-self: center;
   }
 }
 

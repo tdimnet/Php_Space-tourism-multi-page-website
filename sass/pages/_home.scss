@@ -16,6 +16,7 @@
 
   @media screen and (min-width: $desktop) {
     background-image: url("../../public/img/bg-home-desktop.jpg");
+    height: 100%;
   }
 }
 
@@ -34,11 +35,12 @@
   @media screen and (min-width: $desktop) {
     max-width: unset;
     width: 80%;
-    height: 80vh;
     text-align: left;
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: center;
+    padding-bottom: 0;
+    height: 80vh;
   }
 
   &__main-content {
@@ -69,6 +71,10 @@
     @media screen and (min-width: $tablet) {
       margin-bottom: 156px;
     }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 0px;
+    }
   }
 
   &__cta {
@@ -94,7 +100,6 @@
 
     @media screen and (min-width: $desktop) {
       margin-right: 0;
-      align-self: center;
     }
   }
 }
