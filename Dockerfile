@@ -15,12 +15,12 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN apt-get install unzip -y
 RUN curl -fsSL https://fnm.vercel.app/install | bash
 
-# Set FNM environment
+# Set up fnm environment variables and use node
 ENV FNM_DIR="/root/.fnm"
-ENV PATH="/root/.fnm:/root/.fnm/aliases/default/bin:$PATH"
+ENV PATH="$FNM_DIR:$PATH"
 
-# Install node 20 and allow to use it in command line
-RUN /bin/bash -c "source /root/.bashrc && fnm install 20 && fnm use 20"
+# Initialize fnm and install Node.js version 20
+RUN /bin/bash -c "source /root/.bashrc && eval \"$(fnm env)\" && fnm install 20 && fnm use 20"
 
 
 FROM dev as build
