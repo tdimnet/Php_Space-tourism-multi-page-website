@@ -31,4 +31,5 @@ jobs:
           push: true
           load: false
           tags: tdimnet/php_space-tourism-multi-page-website:latest
+          target: prod
 
