@@ -4,7 +4,7 @@ WORKDIR /var/www/html
 RUN a2enmod rewrite
 
 
-FROM base AS build
+FROM base AS dev
 
 # Installing Composer (need to have Git install before)
 RUN apt-get update 
@@ -24,21 +24,27 @@ ENV PATH="/root/.fnm:/root/.fnm/aliases/default/bin:$PATH"
 RUN /bin/bash -c "source /root/.bashrc && fnm install 20 && fnm use 20"
 
 
-FROM build as prodbuild
+FROM dev as build
 # Copying both composer and package json files
 COPY composer.json .
 COPY package*.json .
+# COPY sass .
 
 # Installing Node.JS and Php dependencies
 RUN composer install
 RUN npm ci
-RUN npm run sass:build
+# RUN npm run sass:build
+
+RUN touch toto.txt
 
 
 FROM base AS prod
-COPY --from=prodbuild ./vendor ./vendor
-COPY --from=prodbuild ./public ./public
+# # Copying Php lib and built SASS to CSS files
+COPY --from=build ./var/www/html/toto.txt .
+# COPY --from=prodbuild ./vendor ./vendor
+# COPY --from=prodbuild ./public ./public
 
-# Copying project files
+# # Copying project files
 COPY index.php .
-
+# COPY views .
+# COPY .htaccess .

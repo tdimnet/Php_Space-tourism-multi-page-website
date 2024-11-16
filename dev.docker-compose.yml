@@ -2,7 +2,7 @@ services:
   php-app:
     build:
       context: .
-      target: build
+      target: dev
     ports:
       - "80:80"
     volumes:
