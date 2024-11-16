@@ -1,8 +1,7 @@
-FROM php:8.3-apache
+FROM php:8.3-apache AS base
 
 WORKDIR /var/www/html
 RUN a2enmod rewrite
-
 
 # Installing Composer (need to have Git install before)
 RUN apt-get update 
