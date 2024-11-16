@@ -1,0 +1,7 @@
+services:
+  php-app:
+    build: 
+      context: .
+      target: prod
+    ports:
+      - "80:80"
