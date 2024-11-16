@@ -11,16 +11,15 @@ RUN apt-get update
 RUN apt-get install git -y
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-
 # Installing Node.JS in order to use Sass on dev
 RUN apt-get install unzip -y
 RUN curl -fsSL https://fnm.vercel.app/install | bash
 
-# Besoin sur le build de l'app
 # Set FNM environment
 ENV FNM_DIR="/root/.fnm"
 ENV PATH="/root/.fnm:/root/.fnm/aliases/default/bin:$PATH"
 
+# Install node 20 and allow to use it in command line
 RUN /bin/bash -c "source /root/.bashrc && fnm install 20 && fnm use 20"
 
 
@@ -28,23 +27,25 @@ FROM dev as build
 # Copying both composer and package json files
 COPY composer.json .
 COPY package*.json .
-# COPY sass .
+
+# Copying images, JavaScript, and Sass files
+COPY public ./public
+COPY sass ./sass
 
 # Installing Node.JS and Php dependencies
 RUN composer install
 RUN npm ci
-# RUN npm run sass:build
 
-RUN touch toto.txt
+# Building Sass to CSS in compressed mode
+RUN npm run sass:build
 
 
 FROM base AS prod
-# # Copying Php lib and built SASS to CSS files
-COPY --from=build ./var/www/html/toto.txt .
-# COPY --from=prodbuild ./vendor ./vendor
-# COPY --from=prodbuild ./public ./public
+# Copying Php lib, built Sass to CSS files, and all JS and imgs stuff
+COPY --from=build /var/www/html/vendor ./vendor
+COPY --from=build /var/www/html/public ./public
 
-# # Copying project files
+# Copying project files
 COPY index.php .
-# COPY views .
-# COPY .htaccess .
+COPY views ./views
+COPY .htaccess .
