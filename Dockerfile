@@ -11,12 +11,10 @@ RUN apt-get update
 RUN apt-get install git -y
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Installing Node.js and npm from the NodeSource repository
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x -o nodesource_setup.sh && \
-    bash nodesource_setup.sh && \
-    apt-get install -y nodejs
+# Installing Node.js and npm using the default apt-get packages
+RUN apt-get update && apt-get install -y nodejs npm
 
-# Checking that Node and Npm are installed
+# Checking that Node.JS and npm are installed
 RUN node -v && npm -v
 
 
