@@ -11,16 +11,12 @@ RUN apt-get update
 RUN apt-get install git -y
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Installing Node.JS in order to use Sass on dev
-RUN apt-get install unzip -y
-RUN curl -fsSL https://fnm.vercel.app/install | bash
+# Installing Node.js and npm from the NodeSource repository
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
+    apt-get install -y nodejs
 
-# Set up fnm environment variables and use node
-ENV FNM_DIR="/root/.fnm"
-ENV PATH="$FNM_DIR:$PATH"
-
-# Initialize fnm and install Node.js version 20
-RUN /bin/bash -c "source /root/.bashrc && eval \"$(fnm env)\" && fnm install 20 && fnm use 20"
+# Checking that Node and Npm are installed
+RUN node -v && npm -v
 
 
 FROM dev as build
