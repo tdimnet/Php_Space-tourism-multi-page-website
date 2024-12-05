@@ -41,6 +41,7 @@ COPY --from=build /var/www/html/vendor ./vendor
 COPY --from=build /var/www/html/public ./public
 
 # Copying project files
+COPY .htaccess .
 COPY index.php .
 COPY views ./views
-COPY .htaccess .
+
